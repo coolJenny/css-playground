@@ -1,0 +1,89 @@
+*
+  box-sizing border-box
+  outline none !important
+
+html
+  min-width 880px
+  background-size 170px
+  color $text-main
+  font 14px/1.4 'Helvetica', Arial, sans-serif
+
+body
+  background #eee
+
+a
+  text-decoration none
+  transition color .15s, background-color .15s, opacity .15s
+  color $base-sub
+  &:hover
+    text-decoration none
+    color darken($base-sub, 22%)
+
+code
+  display inline-block
+  background #f6f6f6
+  padding .08em .35em
+  color $text-sub
+  margin .15em 0
+
+::selection
+  color #fff !important
+  background $base-sub !important
+
+// form elements
+button
+input[type='button']
+input[type='submit']
+  cursor pointer
+
+textarea
+input[type='text']
+input[type='password']
+input[type='email']
+input[type='search']
+  background transparent
+  box inline-block
+  border none
+  transition background .15s, color .15s
+  vertical-align middle
+  border 1px solid #eee
+  padding .45em .8em
+  border-radius .28em
+  box-shadow none
+  &:focus
+    border-color $base-sub
+
+textarea
+  resize vertical
+
+img
+  height auto
+  max-width 100%
+
+ul
+  list-style none
+  margin 0
+  padding 0
+
+h1
+h2
+h3
+h4
+h5
+h6
+  line-height 1.1
+
+h1
+h2
+h3
+  margin-top 20px
+  margin-bottom 10px
+
+h4
+h5
+h6
+  margin-top 10px
+  margin-bottom 10px
+
+p
+  margin 0 0 10px

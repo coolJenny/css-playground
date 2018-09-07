@@ -1,0 +1,68 @@
+.picker
+  padding 5px 0
+  margin -3px 0
+  &__current
+    width 28px
+    height 28px
+    border-radius 3px
+    margin-right 10px
+    cursor pointer
+    background-size 100%
+    &-inner
+      height 100%
+      box-shadow inset 0 0 0 1px rgba(#000, 10%)
+      border-radius 3px
+      transition background-color .2s
+
+  &__body
+    display flex
+    align-items center
+  &__input
+    position relative
+    margin-right 10px
+    .inp-text
+      background #fff
+      padding .4em 2.2em .4em .7em
+      color $text-sub
+      width 130px
+    input
+      height 28px
+
+  &__call
+    position absolute
+    top 0
+    right 0
+    text-align center
+    width 30px
+    height 100%
+    color $text-sub
+    font-size .8em
+    line-height 30px
+    overflow hidden
+    cursor pointer
+    transition .15s
+    &:hover
+      color $base-sub
+    .inp-color
+      opacity 0
+      visibility hidden
+  &__clear
+    display inline-block
+    width 28px
+    height 28px
+    line-height 26px
+  &__variants
+    line-height 1
+    &-item
+      display inline-block
+      width 19px
+      height 19px
+      margin 0 4.5px
+      border-radius 50%
+      border 1px solid rgba(#000, 15%)
+      cursor pointer
+      transition .15s
+      vertical-align middle
+      background-size 100%
+      &:hover
+        opacity .8
